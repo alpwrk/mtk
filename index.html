@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPEED-CONV // KMH-MPH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-bg"></div>
+
+    <main class="container">
+        <header class="head">
+            <div class="head-left">
+                <span class="dot"></span>
+                <span class="status">MTK-001 // ONLINE</span>
+            </div>
+            <div class="head-right">
+                <span class="version">alpwrk</span>
+            </div>
+        </header>
+
+        <div class="title-block">
+            <div class="label-sm">MODULE</div>
+            <h1>SPEED CONVERTER</h1>
+            <div class="title-meta">[ KM/H &lt;-&gt; MPH ]</div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-header">
+                <span>INPUT_CHANNEL_A</span>
+                <span class="panel-tag">KMH</span>
+            </div>
+            <div class="field">
+                <input type="number" id="kmh" placeholder="0.00" step="any" autocomplete="off">
+                <span class="unit">KM/H</span>
+            </div>
+        </div>
+
+        <div class="bridge">
+            <div class="bridge-line"></div>
+            <div class="bridge-mark">CONV</div>
+            <div class="bridge-line"></div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-header">
+                <span>OUTPUT_CHANNEL_B</span>
+                <span class="panel-tag">MPH</span>
+            </div>
+            <div class="field">
+                <input type="number" id="mph" placeholder="0.00" step="any" autocomplete="off">
+                <span class="unit">MPH</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="clear" class="btn">
+                <span class="btn-bracket">[</span>
+                <span class="btn-text">RESET</span>
+                <span class="btn-bracket">]</span>
+            </button>
+        </div>
+
+        <footer class="foot">
+            <div class="foot-row">
+                <span class="foot-key">RATIO_FWD</span>
+                <span class="foot-val">1 KM/H = 0.621371 MPH</span>
+            </div>
+            <div class="foot-row">
+                <span class="foot-key">RATIO_REV</span>
+                <span class="foot-val">1 MPH = 1.609344 KM/H</span>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
